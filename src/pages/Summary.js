@@ -1,6 +1,6 @@
 export default function Summary() {
   return (
-    <section>
+    <section id="summary">
       <h1>Professional Summary</h1>
       <p>
         Android Developer transitioning from SCADA and industrial operations.

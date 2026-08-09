@@ -1,6 +1,6 @@
 export default function Experience() {
   return (
-    <section>
+    <section id="experience">
       <h1>Experience</h1>
       <p>
         SCADA Operations • Industrial Automation • Android Development •
@@ -9,3 +9,4 @@ export default function Experience() {
     </section>
   );
 }
+

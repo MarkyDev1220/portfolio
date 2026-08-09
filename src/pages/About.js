@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section>
+    <section id="about">
       <h1>About Me</h1>
       <p>
         I am an Android developer with a background in SCADA and industrial

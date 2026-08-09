@@ -1,18 +1,20 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 export default function Header() {
   return (
     <header>
       <nav>
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/summary">Summary</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/projects">Projects</Link></li>
-          <li><Link to="/experience">Experience</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="home" smooth={true} duration={500}>Home</Link></li>
+          <li><Link to="summary" smooth={true} duration={500}>Summary</Link></li>
+          <li><Link to="about" smooth={true} duration={500}>About</Link></li>
+          <li><Link to="projects" smooth={true} duration={500}>Projects</Link></li>
+          <li><Link to="experience" smooth={true} duration={500}>Experience</Link></li>
+          <li><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
+          <li><Link to="resume" smooth={true} duration={500}>Resume</Link></li>
         </ul>
       </nav>
     </header>
   );
 }
+
