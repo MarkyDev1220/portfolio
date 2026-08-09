@@ -4,8 +4,8 @@ import { useEffect } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+import Intro from "./pages/Intro";
 import Resume from "./pages/Resume";
-import Home from "./pages/Home";
 import Summary from "./pages/Summary";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
@@ -32,10 +32,8 @@ function App() {
             element={
               <>
                 <intro />
-                <Home />
                 <Summary />
                 <Skills />
-              
                 <Projects />
                 <Experience />
                 <Contact />

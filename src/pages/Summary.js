@@ -3,10 +3,11 @@ export default function Summary() {
     <section id="summary">
       <h1>Professional Summary</h1>
       <p>
-        Android Developer transitioning from SCADA and industrial operations.
-        Skilled in Kotlin, Jetpack Compose, MVVM, Firebase, and building
-        scalable mobile applications. Strong problem-solving background from
-        industrial systems and real-time operations.
+        Android Developer specializing in Kotlin-based mobile application development using Android SDK, Jetpack Compose, MVVM, and Clean
+        Architecture. Developed healthcare and real-time multiplayer applications integrating Firebase, WebRTC, CameraX, and StateFlow,
+        reducing Firestore reads by 30% and synchronization latency by 25% through targeted architectural improvements. Applies systematic
+        debugging, root-cause analysis, and system monitoring developed through SCADA-controlled industrial operations to software problem
+        solving and application reliability.
       </p>
     </section>
   );

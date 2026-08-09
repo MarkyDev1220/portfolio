@@ -19,8 +19,7 @@ export default function Header() {
     <header>
       <nav>
         <ul>
-          <li onClick={() => handleScroll("hero")}>Intro</li>
-          <li onClick={() => handleScroll("home")}>Home</li>
+          <li onClick={() => handleScroll("intro")}>Intro</li>
           <li onClick={() => handleScroll("summary")}>Summary</li>
           <li onClick={() => handleScroll("skills")}>Skills</li>
           <li onClick={() => handleScroll("projects")}>Projects</li>
