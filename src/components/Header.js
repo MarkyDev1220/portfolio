@@ -1,16 +1,32 @@
-import { Link } from "react-scroll";
+import { useNavigate, useLocation } from "react-router-dom";
 
 export default function Header() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleScroll = (target) => {
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        document.getElementById(target)?.scrollIntoView({ behavior: "smooth" });
+      }, 150);
+    } else {
+      document.getElementById(target)?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header>
       <nav>
         <ul>
-          <li><Link to="home" smooth={true} duration={500}>Home</Link></li>
-          <li><Link to="summary" smooth={true} duration={500}>Summary</Link></li>
-          <li><Link to="about" smooth={true} duration={500}>About</Link></li>
-          <li><Link to="projects" smooth={true} duration={500}>Projects</Link></li>
-          <li><Link to="experience" smooth={true} duration={500}>Experience</Link></li>
-          <li><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
+          <li onClick={() => handleScroll("hero")}>Intro</li>
+          <li onClick={() => handleScroll("home")}>Home</li>
+          <li onClick={() => handleScroll("summary")}>Summary</li>
+          <li onClick={() => handleScroll("about")}>About</li>
+          <li onClick={() => handleScroll("skills")}>Skills</li>
+          <li onClick={() => handleScroll("projects")}>Projects</li>
+          <li onClick={() => handleScroll("experience")}>Experience</li>
+          <li onClick={() => handleScroll("contact")}>Contact</li>
 
           {/* Resume is a separate page */}
           <li><a href="/resume">Resume</a></li>
@@ -19,6 +35,8 @@ export default function Header() {
     </header>
   );
 }
+
+
 
 
 
