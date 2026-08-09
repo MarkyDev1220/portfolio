@@ -6,7 +6,6 @@ import Footer from "./components/Footer";
 
 import Intro from "./pages/Intro";
 import Resume from "./pages/Resume";
-import Summary from "./pages/Summary";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
@@ -32,7 +31,6 @@ function App() {
             element={
               <>
                 <Intro />
-                <Summary />
                 <Skills />
                 <Projects />
                 <Experience />
