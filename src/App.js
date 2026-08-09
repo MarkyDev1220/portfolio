@@ -31,7 +31,7 @@ function App() {
             path="/"
             element={
               <>
-                <intro />
+                <Intro />
                 <Summary />
                 <Skills />
                 <Projects />
