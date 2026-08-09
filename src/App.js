@@ -14,6 +14,7 @@ import Contact from "./pages/Contact";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Skills from "./pages/Skills";
 
 function App() {
   useEffect(() => {
@@ -33,6 +34,7 @@ function App() {
               <>
                 <Home />
                 <Summary />
+                <Skills />
                 <About />
                 <Projects />
                 <Experience />
