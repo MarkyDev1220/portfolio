@@ -11,10 +11,15 @@ export default function Header() {
           <li><Link to="projects" smooth={true} duration={500}>Projects</Link></li>
           <li><Link to="experience" smooth={true} duration={500}>Experience</Link></li>
           <li><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
-          <li><Link to="resume" smooth={true} duration={500}>Resume</Link></li>
+
+          {/* Resume is a separate page */}
+          <li><a href="/resume">Resume</a></li>
         </ul>
       </nav>
     </header>
   );
 }
+
+
+
 

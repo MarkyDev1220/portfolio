@@ -26,12 +26,22 @@ function App() {
 
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/summary" element={<Summary />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/contact" element={<Contact />} />
+          {/* SINGLE PAGE SCROLLING */}
+          <Route
+            path="/"
+            element={
+              <>
+                <Home />
+                <Summary />
+                <About />
+                <Projects />
+                <Experience />
+                <Contact />
+              </>
+            }
+          />
+
+          {/* RESUME PAGE */}
           <Route path="/resume" element={<Resume />} />
         </Routes>
       </main>
