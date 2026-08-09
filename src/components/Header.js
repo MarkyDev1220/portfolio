@@ -22,7 +22,6 @@ export default function Header() {
           <li onClick={() => handleScroll("hero")}>Intro</li>
           <li onClick={() => handleScroll("home")}>Home</li>
           <li onClick={() => handleScroll("summary")}>Summary</li>
-          <li onClick={() => handleScroll("about")}>About</li>
           <li onClick={() => handleScroll("skills")}>Skills</li>
           <li onClick={() => handleScroll("projects")}>Projects</li>
           <li onClick={() => handleScroll("experience")}>Experience</li>

@@ -32,10 +32,11 @@ function App() {
             path="/"
             element={
               <>
+                <intro />
                 <Home />
                 <Summary />
                 <Skills />
-                <About />
+              
                 <Projects />
                 <Experience />
                 <Contact />
