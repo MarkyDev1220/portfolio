@@ -7,7 +7,6 @@ import Footer from "./components/Footer";
 import Resume from "./pages/Resume";
 import Home from "./pages/Home";
 import Summary from "./pages/Summary";
-import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
