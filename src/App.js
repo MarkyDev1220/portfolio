@@ -9,6 +9,7 @@ import Resume from "./pages/Resume";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
+import About from "./pages/About";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -35,6 +36,7 @@ function App() {
                 <Projects />
                 <Experience />
                 <Contact />
+                <About />
               </>
             }
           />

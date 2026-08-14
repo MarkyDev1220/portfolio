@@ -123,3 +123,50 @@ footer {
   transform: translateY(-5px);
 }
 
+/* ABOUT SECTION */
+.about-section {
+  padding: 100px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 60px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.about-card {
+  background: #151515;
+  border-radius: 10px;
+  padding: 30px;
+  border: 1px solid #333;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.2);
+  transition: 0.3s;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  border-color: #007bff;
+}
+
+.about-heading {
+  font-size: 1.6rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.about-card p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
