@@ -32,11 +32,12 @@ function App() {
             element={
               <>
                 <Intro />
+                <About />
                 <Skills />
                 <Projects />
                 <Experience />
                 <Contact />
-                <About />
+                
               </>
             }
           />
