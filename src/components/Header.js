@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useNavigate, useLocation } from "react-router-dom";
 
 export default function Header() {
@@ -25,15 +26,15 @@ export default function Header() {
           <li onClick={() => handleScroll("experience")}>Experience</li>
           <li onClick={() => handleScroll("contact")}>Contact</li>
 
-          {/* Resume is a separate page */}
-          <li><a href="/resume">Resume</a></li>
+          {/* Resume page link */}
+          <li>
+            <Link to="/resume">Resume</Link>
+          </li>
         </ul>
       </nav>
     </header>
   );
 }
-
-
 
 
 
