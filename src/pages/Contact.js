@@ -1,10 +1,32 @@
 export default function Contact() {
   return (
-    <section id="contact">
+    <section id="contact" className="contact-section">
       <h1>Contact</h1>
-      <p>Email: markdjones20@icloud.com</p>
-      <p>Phone: (229)491-3188</p>
-      <p>LinkedIn: linkedin.com/in/markdjones</p>
+
+      <p>
+        <strong>Email:</strong>{" "}
+        <a href="mailto:markdjones20@icloud.com" target="_blank" rel="noopener noreferrer">
+          markdjones20@icloud.com
+        </a>
+      </p>
+
+      <p>
+        <strong>Phone:</strong> (229) 491-3188
+      </p>
+
+      <p>
+        <strong>LinkedIn:</strong>{" "}
+        <a href="https://linkedin.com/in/markdjones" target="_blank" rel="noopener noreferrer">
+          linkedin.com/in/markdjones
+        </a>
+      </p>
+
+      <p>
+        <strong>GitHub:</strong>{" "}
+        <a href="https://github.com/markydev1220" target="_blank" rel="noopener noreferrer">
+          github.com/markydev1220
+        </a>
+      </p>
     </section>
   );
 }
