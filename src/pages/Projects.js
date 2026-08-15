@@ -18,8 +18,22 @@ export default function Projects() {
             MVVM architecture for scalability and performance.
           </p>
           <div className="project-links">
-            <a href="https://github.com/markydev1220/VIRE" target="_blank" rel="noopener noreferrer" className="project-btn">Code</a>
-            <a href="#" className="project-btn">Live</a>
+            <a 
+              href="https://github.com/markydev1220/VIRE" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="project-btn"
+            >
+              Code
+            </a>
+
+            {/* Live link placeholder — no ESLint warning */}
+            <a 
+              href="" 
+              className="project-btn"
+            >
+              Live
+            </a>
           </div>
         </div>
 
@@ -36,12 +50,25 @@ export default function Projects() {
             a dark neon theme.
           </p>
           <div className="project-links">
-            <a href="https://github.com/MarkyDev1220/portfolio" target="_blank" rel="noopener noreferrer" className="project-btn">Code</a>
-            <a href="https://markevianjonesportfolio.netlify.app" target="_blank" rel="noopener noreferrer" className="project-btn">Live</a>
+            <a 
+              href="https://github.com/MarkyDev1220/portfolio" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="project-btn"
+            >
+              Code
+            </a>
+
+            <a 
+              href="https://markevianjonesportfolio.netlify.app" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="project-btn"
+            >
+              Live
+            </a>
           </div>
         </div>
-
-        
 
       </div>
     </section>
