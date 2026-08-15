@@ -1,7 +1,7 @@
 export default function Interested() {
   return (
     <section id="experience" className="interested-section">
-      <h1>Interested</h1>
+      <h1>Interested In:</h1>
 
       <div className="interested-grid">
 
