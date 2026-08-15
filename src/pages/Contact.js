@@ -17,7 +17,7 @@ export default function Contact() {
       <p>
         <strong>LinkedIn:</strong>{" "}
         <a href="https://linkedin.com/in/markevianjones" target="_blank" rel="noopener noreferrer">
-          linkedin.com/in/markdjones
+          linkedin.com/in/markevianjones
         </a>
       </p>
 
