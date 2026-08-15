@@ -36,38 +36,12 @@ export default function Projects() {
             a dark neon theme.
           </p>
           <div className="project-links">
-            <a href="https://github.com/markydev1220/portfolio-site" target="_blank" rel="noopener noreferrer" className="project-btn">Code</a>
+            <a href="https://github.com/MarkyDev1220/portfolio" target="_blank" rel="noopener noreferrer" className="project-btn">Code</a>
             <a href="https://markevianjonesportfolio.netlify.app" target="_blank" rel="noopener noreferrer" className="project-btn">Live</a>
           </div>
         </div>
 
-        {/* Future Project 1 */}
-        <div className="project-card" data-aos="fade-up">
-          <img src="/images/project-placeholder.png" alt="Future Project" className="project-image" />
-          <h2>Future Project 1</h2>
-          <p className="project-tech">Made with: TBD</p>
-          <p>
-            Placeholder for an upcoming project — details will be added soon.
-          </p>
-          <div className="project-links">
-            <a href="#" className="project-btn">Code</a>
-            <a href="#" className="project-btn">Live</a>
-          </div>
-        </div>
-
-        {/* Future Project 2 */}
-        <div className="project-card" data-aos="fade-up">
-          <img src="/images/project-placeholder.png" alt="Future Project" className="project-image" />
-          <h2>Future Project 2</h2>
-          <p className="project-tech">Made with: TBD</p>
-          <p>
-            Placeholder for an upcoming project — details will be added soon.
-          </p>
-          <div className="project-links">
-            <a href="#" className="project-btn">Code</a>
-            <a href="#" className="project-btn">Live</a>
-          </div>
-        </div>
+        
 
       </div>
     </section>
