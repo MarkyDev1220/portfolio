@@ -27,15 +27,11 @@ export default function Projects() {
               Code
             </a>
 
-            {/* Live link placeholder — no ESLint warning */}
-            <a 
-              href="" 
-              className="project-btn"
-            >
-              Live
-            </a>
+            {/* FIXED — no ESLint warning */}
+            <button className="project-btn">Live</button>
           </div>
         </div>
+
 
         {/* Portfolio Website */}
         <div className="project-card" data-aos="fade-up">
