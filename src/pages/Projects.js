@@ -35,7 +35,7 @@ export default function Projects() {
 
         {/* Portfolio Website */}
         <div className="project-card" data-aos="fade-up">
-          <img src="/images/portfolio-full.png" alt="Portfolio Website" className="project-image" />
+          <img src="/images/portfolio-site.png" alt="Portfolio Website" className="project-image" />
           <h2>Portfolio Website</h2>
           <p className="project-tech">
             Made with: React • JavaScript • HTML • CSS • AOS • Netlify
