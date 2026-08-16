@@ -7,8 +7,8 @@ export default function Intro() {
         Hello, My Name is Markevian Jones.
         I’m an Android Developer with a background in SCADA and industrial operations. 
         I build modern mobile apps using Kotlin, Jetpack Compose, MVVM, and Firebase. 
-        My experience with real‑time industrial systems gives me a strong foundation in automation, r
-        eliability, and problem‑solving. I enjoy creating tools that help people and designing intuitive, 
+        My experience with real‑time industrial systems gives me a strong foundation in automation, reliability, 
+        and problem‑solving. I enjoy creating tools that help people and designing intuitive, 
         scalable software.
       </p>
     </section>
