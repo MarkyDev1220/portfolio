@@ -305,6 +305,15 @@ footer {
   border: 1px solid #333;
 }
 
+.project-image {
+  width: 100%;
+  height: auto;
+  max-height: 500px; /* adjust as needed */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
 .project-card h2 {
   color: #007bff;
   margin-bottom: 8px;
