@@ -273,7 +273,8 @@ footer {
 .projects-section {
   padding: 80px 20px;
   text-align: center;
-  min-height: 1600px; /* space for future projects */
+  min-height: 300px; /* space for future projects */
+  margin-bottom: 100px;
 }
 
 /* TWO‑COLUMN GRID */
