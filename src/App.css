@@ -285,11 +285,11 @@ footer {
 
 .project-card {
   width: 100%;
-  max-width: 900px;       /* controls overall width */
+  max-width: 600px;       /* controls overall width */
   background: #151515;
   border: 1px solid #333;
   border-radius: 10px;
-  padding: 25px;
+  padding: 15px;
   text-align: left;
   box-shadow: 0 0 15px rgba(0, 123, 255, 0.15);
   transition: 0.3s;
@@ -312,7 +312,7 @@ footer {
 .project-image {
   width: 100%;
   height: auto;
-  max-height: 250px; /* adjust as needed */
+  max-height: 150px; /* adjust as needed */
   object-fit: cover;
   border-radius: 8px;
 }
@@ -320,13 +320,14 @@ footer {
 .project-card h2 {
   color: #007bff;
   margin-bottom: 8px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .project-tech {
   font-weight: 600;
   color: #ff007b;
   margin-bottom: 10px;
+  font-size: 0.9rem;
 }
 
 .project-links {
@@ -368,6 +369,7 @@ footer {
 .project-details {
   flex: 1;
   max-width: 50%;
+  font-size: 0.95rem;
 }
 
 /* Alternate layout for every other project */
