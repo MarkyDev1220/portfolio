@@ -314,7 +314,6 @@ footer {
   border-radius: 8px;
 }
 
-
 .project-card h2 {
   color: #007bff;
   margin-bottom: 8px;
@@ -347,4 +346,41 @@ footer {
 .project-btn:hover {
   background: #007bff;
   color: #fff;
+}
+
+/* --- NEW SIDE-BY-SIDE LAYOUT --- */
+.project-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap; /* keeps layout responsive */
+}
+
+.project-image-container {
+  flex: 1;
+  max-width: 45%;
+}
+
+.project-details {
+  flex: 1;
+  max-width: 50%;
+}
+
+/* Alternate layout for every other project */
+.project-card:nth-child(even) .project-content {
+  flex-direction: row-reverse;
+}
+
+/* Responsive stacking for mobile */
+@media (max-width: 768px) {
+  .project-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-image-container,
+  .project-details {
+    max-width: 100%;
+  }
 }
