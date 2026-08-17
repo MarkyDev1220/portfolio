@@ -27,6 +27,13 @@ export default function Contact() {
           github.com/markydev1220
         </a>
       </p>
+
+      <p>
+        <strong>Portfolio</strong>{" "}
+        <a href="https://markevianjonesportfolio.netlify.app" target="_blank" rel="noopener noreferrer">
+        markevianjonesportfolio.netlify.app
+        </a>
+      </p>
     </section>
   );
 }
