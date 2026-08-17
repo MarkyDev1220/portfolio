@@ -276,19 +276,19 @@ footer {
   min-height: 1600px; /* space for future projects */
 }
 
-/* STACK PROJECTS VERTICALLY */
+/* TWO‑COLUMN GRID */
 .projects-grid {
-  display: flex;
-  flex-direction: column; /* stack vertically */
-  gap: 40px;              /* space between projects */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* two columns */
+  gap: 40px; /* space between columns and rows */
   margin-top: 25px;
-  align-items: flex-start; /* left aligned */
+  justify-content: center; /* centers grid horizontally */
 }
 
 /* PROJECT CARD */
 .project-card {
   width: 100%;
-  max-width: 600px;       /* controls overall width */
+  max-width: 600px;
   background: #151515;
   border: 1px solid #333;
   border-radius: 10px;
@@ -308,7 +308,7 @@ footer {
 .project-image {
   width: 100%;
   height: auto;
-  max-height: 150px; /* smaller image */
+  max-height: 150px;
   object-fit: cover;
   border-radius: 8px;
   border: 1px solid #333;
@@ -358,13 +358,13 @@ footer {
   color: #fff;
 }
 
-/* --- SIDE-BY-SIDE LAYOUT INSIDE EACH CARD --- */
+/* SIDE‑BY‑SIDE LAYOUT INSIDE EACH CARD */
 .project-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  flex-wrap: wrap; /* responsive */
+  flex-wrap: wrap;
 }
 
 .project-image-container {
@@ -375,19 +375,6 @@ footer {
 /* ALTERNATE IMAGE/TEXT LEFT/RIGHT */
 .project-card:nth-child(even) .project-content {
   flex-direction: row-reverse;
-}
-
-/* MOBILE RESPONSIVE */
-@media (max-width: 768px) {
-  .project-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .project-image-container,
-  .project-details {
-    max-width: 100%;
-  }
 }
 
 /* PLACEHOLDER PROJECTS */
@@ -404,5 +391,23 @@ footer {
   border: 1px dashed #444;
   border-radius: 8px;
   margin-bottom: 15px;
+}
+
+/* RESPONSIVE STACKING FOR MOBILE */
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* stack vertically on smaller screens */
+    align-items: center;
+  }
+
+  .project-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-image-container,
+  .project-details {
+    max-width: 100%;
+  }
 }
 
