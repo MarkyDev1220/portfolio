@@ -276,22 +276,25 @@ footer {
 }
 
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 25px;
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  gap: 40px;              /* space between projects */
   margin-top: 25px;
+  align-items: center;    /* center cards horizontally */
 }
 
 .project-card {
+  width: 100%;
+  max-width: 900px;       /* controls overall width */
   background: #151515;
   border: 1px solid #333;
   border-radius: 10px;
-  padding: 15px;
+  padding: 25px;
   text-align: left;
   box-shadow: 0 0 15px rgba(0, 123, 255, 0.15);
   transition: 0.3s;
-  max-width: 280px;
 }
+
 
 .project-card:hover {
   transform: translateY(-5px);
