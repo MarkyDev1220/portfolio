@@ -273,16 +273,19 @@ footer {
 .projects-section {
   padding: 80px 20px;
   text-align: center;
+  min-height: 1600px; /* space for future projects */
 }
 
+/* STACK PROJECTS VERTICALLY */
 .projects-grid {
   display: flex;
   flex-direction: column; /* stack vertically */
   gap: 40px;              /* space between projects */
   margin-top: 25px;
-  align-items: center;    /* center cards horizontally */
+  align-items: flex-start; /* left aligned */
 }
 
+/* PROJECT CARD */
 .project-card {
   width: 100%;
   max-width: 600px;       /* controls overall width */
@@ -295,28 +298,24 @@ footer {
   transition: 0.3s;
 }
 
-
 .project-card:hover {
   transform: translateY(-5px);
   border-color: #007bff;
   box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
 }
 
-.project-image {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  border: 1px solid #333;
-}
-
+/* PROJECT IMAGE */
 .project-image {
   width: 100%;
   height: auto;
-  max-height: 150px; /* adjust as needed */
+  max-height: 150px; /* smaller image */
   object-fit: cover;
   border-radius: 8px;
+  border: 1px solid #333;
+  margin-bottom: 15px;
 }
 
+/* PROJECT TEXT */
 .project-card h2 {
   color: #007bff;
   margin-bottom: 8px;
@@ -330,6 +329,13 @@ footer {
   font-size: 0.9rem;
 }
 
+.project-details {
+  flex: 1;
+  max-width: 50%;
+  font-size: 0.95rem;
+}
+
+/* PROJECT LINKS */
 .project-links {
   display: flex;
   gap: 10px;
@@ -352,13 +358,13 @@ footer {
   color: #fff;
 }
 
-/* --- NEW SIDE-BY-SIDE LAYOUT --- */
+/* --- SIDE-BY-SIDE LAYOUT INSIDE EACH CARD --- */
 .project-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  flex-wrap: wrap; /* keeps layout responsive */
+  flex-wrap: wrap; /* responsive */
 }
 
 .project-image-container {
@@ -366,18 +372,12 @@ footer {
   max-width: 45%;
 }
 
-.project-details {
-  flex: 1;
-  max-width: 50%;
-  font-size: 0.95rem;
-}
-
-/* Alternate layout for every other project */
+/* ALTERNATE IMAGE/TEXT LEFT/RIGHT */
 .project-card:nth-child(even) .project-content {
   flex-direction: row-reverse;
 }
 
-/* Responsive stacking for mobile */
+/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
   .project-content {
     flex-direction: column;
@@ -389,3 +389,20 @@ footer {
     max-width: 100%;
   }
 }
+
+/* PLACEHOLDER PROJECTS */
+.placeholder-card {
+  opacity: 0.4;
+  border-style: dashed;
+  text-align: center;
+}
+
+.placeholder-image {
+  width: 100%;
+  height: 150px;
+  background: #222;
+  border: 1px dashed #444;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+

@@ -97,7 +97,87 @@ export default function Projects() {
           </div>
         </div>
 
+
+        {/* Placeholder Future Project 1 */}
+        <div className="project-card placeholder-card" data-aos="fade-up">
+          <div className="project-content">
+
+            {/* IMAGE PLACEHOLDER */}
+            <div className="project-image-container">
+              <div className="placeholder-image"></div>
+            </div>
+
+            {/* TEXT */}
+            <div className="project-details">
+              <h2>Coming Soon</h2>
+              <p className="project-tech">New project in development</p>
+              <p>
+                A future project will be added here. Stay tuned for updates as more apps,
+                websites, and tools are built and released.
+              </p>
+
+              <div className="project-links">
+                <button className="project-btn" disabled>Code</button>
+                <button className="project-btn" disabled>Live</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        {/* Placeholder Future Project 2 */}
+        <div className="project-card placeholder-card" data-aos="fade-up">
+          <div className="project-content">
+
+            <div className="project-image-container">
+              <div className="placeholder-image"></div>
+            </div>
+
+            <div className="project-details">
+              <h2>Coming Soon</h2>
+              <p className="project-tech">Another project is on the way</p>
+              <p>
+                This slot is reserved for a future project. More development updates coming soon.
+              </p>
+
+              <div className="project-links">
+                <button className="project-btn" disabled>Code</button>
+                <button className="project-btn" disabled>Live</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        {/* Placeholder Future Project 3 */}
+        <div className="project-card placeholder-card" data-aos="fade-up">
+          <div className="project-content">
+
+            <div className="project-image-container">
+              <div className="placeholder-image"></div>
+            </div>
+
+            <div className="project-details">
+              <h2>Coming Soon</h2>
+              <p className="project-tech">Future expansion</p>
+              <p>
+                More projects will be added here as your portfolio continues to grow.
+              </p>
+
+              <div className="project-links">
+                <button className="project-btn" disabled>Code</button>
+                <button className="project-btn" disabled>Live</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </section>
   );
 }
+
+
