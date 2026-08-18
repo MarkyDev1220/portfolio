@@ -3,55 +3,71 @@ export default function Intro() {
     <section id="intro" className="intro-section">
       <h1 className="intro-title">About Me</h1>
 
-      <p className="Professional Summary-intro-text">
-        Hello, My Name is Markevian Jones.
-        I’m an Android Developer with a background in SCADA and industrial operations. 
-        I build modern mobile apps using Kotlin, Jetpack Compose, MVVM, and Firebase. 
-        My experience with real‑time industrial systems gives me a strong foundation in automation, reliability, 
-        and problem‑solving. I enjoy creating tools that help people and designing intuitive, 
-        scalable software.
+      <p className="intro-description">
+        Hello, my name is Markevian Jones. I’m an Android Developer with a background in SCADA and industrial operations.
+        I build modern mobile apps using Kotlin, Jetpack Compose, MVVM, and Firebase. My experience with real‑time
+        industrial systems gives me a strong foundation in automation, reliability, and problem‑solving. I enjoy creating
+        tools that help people and designing intuitive, scalable software.
       </p>
 
-      <div className="about-grid">
-        <div className="about-card">
-          <h2 className="about-heading">Past</h2>
-          <p>
-            Starting discovering my passion and drive to program during Covid-19, Started looking
-            ways to get into Programming and development through youtube. I tried learning basics and failed,
-            This is when i discovered going back to school for my Degree in Computer Science and Development.
-            I started my journey at Full Sail University of the People and have been learning and 
-            growing ever since.
-          </p>
+      <div className="intro-grid">
+
+        {/* Past */}
+        <div className="intro-card" data-aos="fade-up">
+          <div className="intro-content">
+            <div className="intro-details">
+              <h2>Past</h2>
+              <p className="intro-tech">My Journey Begins</p>
+              <p>
+                I discovered my passion for programming during Covid‑19. After early challenges, I enrolled at Full Sail University of the People
+                to study Computer Science and have been learning and growing ever since.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div className="about-card">
-          <h2 className="about-heading">Present</h2>
-          <p>
-            Today I am using my skills as a Developer  to build Applications, Web Applications
-            focused on Kotlin, Jetpack-Compose, and MVVM architecture. I am still learning to 
-            build reliable, scalable apps and enjoysolving complex problems through clean design.
-          </p>
+        {/* Present */}
+        <div className="intro-card" data-aos="fade-up">
+          <div className="intro-content">
+            <div className="intro-details">
+              <h2>Present</h2>
+              <p className="intro-tech">Building and Learning</p>
+              <p>
+                I’m building Android and web apps using Kotlin, Jetpack Compose, and MVVM. I focus on creating scalable,
+                reliable software and solving complex problems through clean design.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div className="about-card">
-          <h2 className="about-heading">Future</h2>
-          <p>
-            I am aiming and striving to expanding into cross‑platform development and backend systems,
-            aiming to create seamless experiences across Android, iOS, and web. As I continue to grow, 
-            I aspire to change my current role and career path and lead teams and projects 
-            that push the boundaries of mobile and web innovation.
-          </p>
+        {/* Future */}
+        <div className="intro-card" data-aos="fade-up">
+          <div className="intro-content">
+            <div className="intro-details">
+              <h2>Future</h2>
+              <p className="intro-tech">Expanding Horizons</p>
+              <p>
+                I aim to expand into cross‑platform and backend development, creating seamless experiences across Android,
+                iOS, and web while leading innovative projects.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div className="about-card">
-          <h2 className="about-heading">Vision</h2>
-          <p>
-            My goal is to be able to gain and have a career change and to also lead projects that 
-            empower developers and businesses alike bridging industrial reliability with modern mobile
-            innovation. My vision is to build teams and projects, while also mentoring and guiding 
-            the next generation of developers to create a better future for all.
-          </p>
+        {/* Vision */}
+        <div className="intro-card" data-aos="fade-up">
+          <div className="intro-content">
+            <div className="intro-details">
+              <h2>Vision</h2>
+              <p className="intro-tech">Empowering Innovation</p>
+              <p>
+                My goal is to lead projects that bridge industrial reliability with modern mobile innovation and mentor
+                the next generation of developers.
+              </p>
+            </div>
+          </div>
         </div>
+
       </div>
     </section>
   );
