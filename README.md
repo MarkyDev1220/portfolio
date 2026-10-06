@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Markevian Jones — Developer Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal portfolio website for **Markevian Jones**, Android Developer and founder of **Techeck Studios**. Built with React and TypeScript and deployed live on Netlify.
 
-## Available Scripts
+🔗 **Live site:** https://markevianjonesportfolio.netlify.app/
 
-In the project directory, you can run:
+## About
 
-### `npm start`
+This site is my professional home on the web: who I am, what I build, and where I'm headed. It showcases my projects — including **VIRE**, my social gaming Android app currently in Google Play closed testing — along with my technical skills, work experience, and long-term vision as a software engineer.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+My background combines software development (Kotlin, Jetpack Compose, Firebase, React, TypeScript) with industrial operations experience in SCADA-controlled environments, which shapes how I approach debugging, reliability, and systems thinking.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Sections
 
-### `npm test`
+- **About Me** — background and introduction
+- **Timeline** — past, present, future, and vision
+- **Skills** — development skills grouped by category
+- **Projects** — featured work, including VIRE and this portfolio site
+- **Experience** — professional work history
+- **Contact** — email, GitHub, and LinkedIn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
 
-### `npm run build`
+- **React** (Create React App)
+- **TypeScript**
+- **HTML / CSS**
+- **Netlify** — hosting and continuous deployment
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Deployment
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The site is deployed on **Netlify** with continuous deployment from this repository: every push to the `main` branch automatically rebuilds and publishes the live site.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Run Locally
 
-### `npm run eject`
+```bash
+# Install dependencies
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Start the development server (http://localhost:3000)
+npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Build for production
+npm run build
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contact
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Email:** markdjones20@icloud.com
+- **GitHub:** [github.com/MarkyDev1220](https://github.com/MarkyDev1220)
+- **LinkedIn:** [linkedin.com/in/markevianjones](https://www.linkedin.com/in/markevianjones)
+- **Studio:** Techeck Studios — Lake Park, GA
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+© Markevian Jones / Techeck Studios. All rights reserved.
