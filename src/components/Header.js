@@ -1,41 +1,73 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { useNavigate, useLocation } from "react-router-dom";
+import "./Header.css";
 
 export default function Header() {
-  const navigate = useNavigate();
-  const location = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleScroll = (target) => {
-    if (location.pathname !== "/") {
-      navigate("/");
-      setTimeout(() => {
-        document.getElementById(target)?.scrollIntoView({ behavior: "smooth" });
-      }, 150);
-    } else {
-      document.getElementById(target)?.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  const toggleMenu = () => setMenuOpen((prev) => !prev);
+  const closeMenu = () => setMenuOpen(false);
 
   return (
-    <header>
-      <nav>
-        <ul>
-          <li onClick={() => handleScroll("intro")}>Intro</li>
-          <li onClick={() => handleScroll("skills")}>Skills</li>
-          <li onClick={() => handleScroll("projects")}>Projects</li>
-          <li onClick={() => handleScroll("experience")}>Experience</li>
-          <li onClick={() => handleScroll("contact")}>Contact</li>
+    <header className="site-header">
+      <div className="header-inner">
+        <div className="brand">
+          <Link to="/" onClick={closeMenu}>
+            MJ
+          </Link>
+        </div>
 
-          {/* Resume page link */}
-          <li>
-            <Link to="/resume">Resume</Link>
-          </li>
-        </ul>
-      </nav>
+        <button
+          className={`hamburger ${menuOpen ? "active" : ""}`}
+          type="button"
+          aria-label="Toggle navigation menu"
+          onClick={toggleMenu}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav className={`main-nav ${menuOpen ? "open" : ""}`}>
+          <ul>
+            <li>
+              <a href="#intro" onClick={closeMenu}>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#skills" onClick={closeMenu}>
+                Skills
+              </a>
+            </li>
+            <li>
+              <a href="#projects" onClick={closeMenu}>
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="#experience" onClick={closeMenu}>
+                Experience
+              </a>
+            </li>
+            <li>
+              <a href="#interested" onClick={closeMenu}>
+                Interests
+              </a>
+            </li>
+            <li>
+              <a href="#contact" onClick={closeMenu}>
+                Contact
+              </a>
+            </li>
+            <li>
+              <Link to="/resume" className="resume-btn" onClick={closeMenu}>
+                Resume
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 }
-
-
-
-
