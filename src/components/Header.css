@@ -18,6 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 /* LOGO */
@@ -32,10 +33,9 @@
 
 .brand a:hover {
   color: #7ab7ff;
-  text-shadow: 0 0 10px rgba(122, 183, 255, 0.4);
 }
 
-/* NAVIGATION MENU */
+/* DESKTOP NAVIGATION */
 .main-nav ul {
   display: flex;
   align-items: center;
@@ -55,9 +55,12 @@
   font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0.04em;
-  transition: 0.2s ease;
   position: relative;
-  display: inline-block;
+  transition: 0.2s ease;
+}
+
+.main-nav a:hover {
+  color: #7ab7ff;
 }
 
 .main-nav a::after {
@@ -71,54 +74,48 @@
   transition: width 0.25s ease;
 }
 
-.main-nav a:hover {
-  color: #7ab7ff;
-}
-
 .main-nav a:hover::after {
   width: 100%;
 }
 
-.main-nav .resume-btn {
+/* RESUME BUTTON */
+.resume-btn {
   display: inline-block;
   padding: 0.7rem 1.15rem;
   border: 1px solid #7ab7ff;
   border-radius: 8px;
-  transition: 0.25s ease;
 }
 
-.main-nav .resume-btn:hover {
+.resume-btn:hover {
   background: #7ab7ff;
   color: #0b1020;
-  box-shadow: 0 4px 12px rgba(122, 183, 255, 0.3);
 }
 
-/* HAMBURGER MENU (Hidden on Desktop) */
+/* HAMBURGER BUTTON */
 .hamburger {
   display: none;
   background: transparent;
   border: none;
   cursor: pointer;
-  padding: 0.2rem;
   width: 42px;
   height: 42px;
-  align-items: center;
-  justify-content: center;
+  padding: 0;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 5px;
 }
 
 .hamburger span {
-  display: block;
   width: 24px;
-  height: 2.5px;
-  background: #dfe9f5;
+  height: 3px;
+  background: #ffffff;
   border-radius: 2px;
-  transition: 0.25s ease;
+  transition: all 0.3s ease;
 }
 
 .hamburger.active span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: translateY(8px) rotate(45deg);
 }
 
 .hamburger.active span:nth-child(2) {
@@ -126,41 +123,40 @@
 }
 
 .hamburger.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+  transform: translateY(-8px) rotate(-45deg);
 }
 
-/* TABLET & MOBILE (900px and below) */
+/* MOBILE MENU */
 @media (max-width: 900px) {
-  .header-inner {
-    padding: 0.85rem 1.25rem;
+  .hamburger {
+    display: flex;
   }
 
   .main-nav {
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    right: 0;
+    width: 100%;
     background: rgba(12, 12, 14, 0.98);
+    backdrop-filter: blur(12px);
     border-top: 1px solid rgba(255, 255, 255, 0.08);
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
+    animation: fadeIn 0.3s ease;
   }
 
   .main-nav.open {
-    max-height: 420px;
+    display: block;
   }
 
   .main-nav ul {
     flex-direction: column;
-    align-items: flex-start;
-    padding: 1.25rem 0;
+    width: 100%;
     gap: 0;
   }
 
   .main-nav li {
     width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   }
 
   .main-nav li:last-child {
@@ -169,51 +165,38 @@
 
   .main-nav a {
     display: block;
-    padding: 1rem 1.5rem;
-    font-size: 0.95rem;
     width: 100%;
+    padding: 1rem 1.5rem;
   }
 
   .main-nav a::after {
     display: none;
   }
 
-  .main-nav a:hover {
-    background: rgba(122, 183, 255, 0.1);
-  }
-
-  .main-nav .resume-btn {
-    margin: 0.75rem 1.5rem;
-    display: block;
+  .resume-btn {
+    margin: 1rem;
     text-align: center;
-    width: calc(100% - 3rem);
-  }
-
-  .hamburger {
-    display: flex;
   }
 }
 
-/* SMALL MOBILE (480px and below) */
 @media (max-width: 480px) {
-  .header-inner {
-    padding: 0.75rem 1rem;
-  }
-
   .brand a {
     font-size: 1.2rem;
   }
 
-  .hamburger span {
-    width: 22px;
+  .header-inner {
+    padding: 0.75rem 1rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
   }
 
-  .main-nav a {
-    padding: 0.85rem 1.25rem;
-  }
-
-  .main-nav .resume-btn {
-    margin: 0.6rem 1.25rem;
-    width: calc(100% - 2.5rem);
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
